@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+abstract class ControldeCalidad
+{
++{abstract}ControldeCalidad(Articulo);
+}
+@enduml

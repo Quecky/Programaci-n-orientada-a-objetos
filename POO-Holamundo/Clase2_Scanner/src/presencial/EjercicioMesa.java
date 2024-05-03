@@ -2,7 +2,8 @@ package presencial;
 
 import java.util.Scanner;
 
-public class EjercicioMesa {
+public class
+EjercicioMesa {
     public static void main(String[] args) {
         Ejercicio1();
     }
@@ -16,9 +17,7 @@ public class EjercicioMesa {
             System.out.println("El numero es primo");
         }
         else
-        {
-            System.out.println("El numero NO es primo");
-        }
+            System.out.println("El numerous NO es primo");
 
     }
     public static boolean verificarPrimo(int numero)

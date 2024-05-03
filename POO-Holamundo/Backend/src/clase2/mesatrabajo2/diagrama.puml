@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Usuario
+{
+-id: String
+-tipoUsuario: Enum
+}
+
+interface ServicioDescarga{
++descargarCancion()
+}
+
+class ProxyServicioDescarga
+{
++descargarCancion()
++verificarUsuario(Usuario):String
+}
+
+class Descarga{
++descargarCancion()
+}
+
+Usuario .l.> ServicioDescarga
+ProxyServicioDescarga --|> ServicioDescarga
+Descarga --|>  ServicioDescarga
+@enduml
