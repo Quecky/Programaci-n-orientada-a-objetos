@@ -7,3 +7,75 @@ RUNSCRIPT FROM 'create.sql' [90031-224]
 [2024-05-14 21:40:18][ ERROR][MedicamentoServiceTest:32] IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
 IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
 RUNSCRIPT FROM 'create.sql' [90031-224]
+[2024-05-16 20:17:59][ ERROR][PacienteServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"; SQL statement:
+RUNSCRIPT FROM 'create2.sql' [90031-224]
+[2024-05-16 20:21:19][ ERROR][PacienteServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"; SQL statement:
+RUNSCRIPT FROM 'create2.sql' [90031-224]
+[2024-05-16 20:23:17][ ERROR][PacienteServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"; SQL statement:
+RUNSCRIPT FROM 'create2.sql' [90031-224]
+[2024-05-16 20:25:49][ ERROR][PacienteServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create2.sql"; "create2.sql"; SQL statement:
+RUNSCRIPT FROM 'create2.sql' [90031-224]
+[2024-05-16 20:27:32][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:27:32][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:28:49][ ERROR][MedicamentoServiceTest:32] Error de Sintaxis en sentencia SQL "\000d\000aCREATE TABLE PACIENTES(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aAPELLIDO VARCHAR(50) NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aDNI VARCHAR(5[*]O) NOT NULL,\000d\000aFECHA_INGRESO DATE NOT NULL,\000d\000aID_DOMICILIO INT)"; se esperaba "CHARACTERS, OCTETS, )"
+Syntax error in SQL statement "\000d\000aCREATE TABLE PACIENTES(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aAPELLIDO VARCHAR(50) NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aDNI VARCHAR(5[*]O) NOT NULL,\000d\000aFECHA_INGRESO DATE NOT NULL,\000d\000aID_DOMICILIO INT)"; expected "CHARACTERS, OCTETS, )"; SQL statement:
+
+CREATE TABLE PACIENTES(
+ID INT AUTO_INCREMENT PRIMARY KEY,
+APELLIDO VARCHAR(50) NOT NULL,
+NOMBRE VARCHAR(50) NOT NULL,
+DNI VARCHAR(5O) NOT NULL,
+FECHA_INGRESO DATE NOT NULL,
+ID_DOMICILIO INT) [42001-224]
+[2024-05-16 20:30:46][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:30:46][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:31:19][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:31:19][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:33:07][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:33:07][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:34:12][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:34:12][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:35:50][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:35:50][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:37:04][ ERROR][PacienteServiceTest:29] Error de Sintaxis en sentencia SQL "\000d\000aCREATE TABLE PACIENTES(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aAPELLIDO VARCHAR(50) NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aDNI VARCHAR(5[*]O) NOT NULL,\000d\000aFECHA_INGRESO DATE NOT NULL,\000d\000aID_DOMICILIO INT)"; se esperaba "CHARACTERS, OCTETS, )"
+Syntax error in SQL statement "\000d\000aCREATE TABLE PACIENTES(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aAPELLIDO VARCHAR(50) NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aDNI VARCHAR(5[*]O) NOT NULL,\000d\000aFECHA_INGRESO DATE NOT NULL,\000d\000aID_DOMICILIO INT)"; expected "CHARACTERS, OCTETS, )"; SQL statement:
+
+CREATE TABLE PACIENTES(
+ID INT AUTO_INCREMENT PRIMARY KEY,
+APELLIDO VARCHAR(50) NOT NULL,
+NOMBRE VARCHAR(50) NOT NULL,
+DNI VARCHAR(5O) NOT NULL,
+FECHA_INGRESO DATE NOT NULL,
+ID_DOMICILIO INT) [42001-224]
+[2024-05-16 20:40:35][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:40:35][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:41:12][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:41:12][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:43:01][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:43:01][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]
+[2024-05-16 20:45:11][ INFO ][DomicilioDaoH2:57] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS VALUES(DEFAULT,?,?,?,?) [42104-224]
+[2024-05-16 20:45:11][ INFO ][PacienteDaiH2:64] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,?) [42104-224]

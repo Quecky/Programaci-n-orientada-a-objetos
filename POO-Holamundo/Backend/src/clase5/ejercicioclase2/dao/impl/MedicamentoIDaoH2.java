@@ -115,4 +115,9 @@ public class MedicamentoIDaoH2 implements IDao<Medicamento> {
 
         return medicamentoRetornar;
     }
+
+    @Override
+    public Medicamento buscarPorid(Integer id) {
+        return null;
+    }
 }
