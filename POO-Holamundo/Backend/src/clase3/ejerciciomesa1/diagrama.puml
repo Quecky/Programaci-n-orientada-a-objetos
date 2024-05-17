@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Arbol
+{
+-alto:double
+
+}
+@enduml

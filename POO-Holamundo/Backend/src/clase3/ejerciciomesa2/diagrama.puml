@@ -1,0 +1,41 @@
+@startuml
+
+class Vuelo{
+-origen:String
+-destino:String
+-fechaSalida:Date
+-fechaEntrada:Date
+}
+
+class Hotel{
+-ciudad:String
+-fechaSalida:Date
+-fechaEntrada:Date
+}
+
+interface IFacadeServicio
+{
++buscarServicio(fechaEntrada,fechaSalida, origen,destino)
+}
+class ApiVuelo
+{
+-Vuelos:ArrayList
++buscarVuelo(origen,destino,fechasSalida, fechaEntrada):String
+}
+
+class ApiHotel
+{
+-Hoteles:ArrayList
++buscarHotel(fechaEntrada, fechaSalida,ciudad)
+}
+class FacadeServicio
+{
++buscarServicio(fechaEntrada,fechaSalida, origen,destino)
+}
+FacadeServicio .l.> Vuelo
+FacadeServicio .r.> Hotel
+IFacadeServicio <|.. FacadeServicio
+FacadeServicio -->ApiHotel
+FacadeServicio --> ApiVuelo
+
+@enduml

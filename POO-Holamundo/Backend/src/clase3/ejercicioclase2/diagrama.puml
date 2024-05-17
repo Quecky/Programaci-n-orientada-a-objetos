@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Tarjeta
+{
+-numero:String
+-banco:String
+}
+
+class Producto
+{
+-nombre:String
+-tipo:String
+}
+
+class ApiTarjeta
+{
++descuento(Tarjeta):int
+}
+
+class ApiProducto
+{
++descuento(Producto):int
+}
+
+class ApiCantidad{
++descuento(cantidad):int
+}
+interface IFacadeDescuento
+{
++calculoDescuento(Producto, Tarjeta, cantidad)
+}
+FacadeDescuento -u->IFacadeDescuento
+class FacadeDescuento
+{
++calculoDescuento(Producto,Tarjeta,cantidad)
+}
+
+@enduml
